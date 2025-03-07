@@ -1,4 +1,4 @@
-# headintheclouds Flask Web App
+# Afro IT Solutions (AIT) Flask Web App
 
 This is a simple Flask web application that demonstrates Docker containerization and data persistence using volumes.
 
@@ -11,15 +11,15 @@ This is a simple Flask web application that demonstrates Docker containerization
 ## Prerequisites
 
 - [Docker](https://www.docker.com/)
-- [Git](https://git-scm.com/)
+- [[Git](https://git-scm.com/)](https://github.com/Ekangaki/docker-volume-demo.git)
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:mili-sucevic/hitc-docker-volume-demo.git
-   cd hitc-docker-volume-demo
+   git clone https://github.com/Ekangaki/docker-volume-demo.git
+   cd docker-volume-demo
 
 2. Build the Docker image:
 
@@ -44,7 +44,7 @@ This is a simple Flask web application that demonstrates Docker containerization
 7. Re-run the container:
     
     ```bash
-    docker run -d --name webapp-without-volume -p 8080:8080 -v hitc-data:/app/data webapp-without-volume
+    docker run -d --name webapp-without-volume -p 8080:8080 -v afro-data:/app/data webapp-without-volume
 
 8. Access the web app at http://localhost:8080 again and observe that the previously added users are no longer present.
 
